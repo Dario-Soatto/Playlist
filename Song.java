@@ -36,5 +36,31 @@ public class Song {
       * What kind of mutator (setter) methods will you need?
       */
 
+    public String getTitle() {
+        return title;
+    }
 
+    public String getArtist() {
+        return artist;
+    }
+
+    public int getMinutes() {
+        return minutes;
+    }
+
+    public int getSeconds() {
+        return seconds;
+    }
+
+    public boolean getLiked() {
+        return liked;
+    }
+
+    public void changeLike() {
+        liked = !liked;
+    }
+
+    public String toString() {
+        return "\"" + title + "\" by " + artist + " (" + minutes + ":" + seconds + ")";
+    }
 }
