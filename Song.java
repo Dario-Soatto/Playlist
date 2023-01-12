@@ -8,7 +8,8 @@ public class Song {
 
     private String title;
     private String artist;
-    private String duration;
+    private int minutes;
+    private int seconds;
     private boolean liked;
 
 
@@ -17,7 +18,7 @@ public class Song {
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
 
-    
+
 
 
 
