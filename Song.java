@@ -1,12 +1,15 @@
 /**
  * File for a Song class to be used in the Playlist Project
- * @author
- * @version
+ * @author Steven Li and Dario Soatto
+ * @version 01/12/2023
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
 
-
+    private String title;
+    private String artist;
+    private String duration;
+    private boolean liked;
 
 
     /**
@@ -14,7 +17,7 @@ public class Song {
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
 
-
+    
 
 
 
