@@ -52,4 +52,40 @@ public class Playlist {
             System.out.println(songs.get(i));
         }
     }
+
+    public void displayLiked() {
+        for(int i = 0; i < songs.size(); i++) {
+            if((songs.get(i)).getLiked() == true) {
+                System.out.println(songs.get(i));
+            }
+        }
+    }
+
+    public String totalDuration() {
+        int s = 0;
+        int m = 0;
+        for(int i = 0; i < songs.size(); i++) {
+            s += (songs.get(i)).getSeconds();
+            m += (songs.get(i)).getMinutes();
+            if(s >= 60) {
+                m++;
+                s = s - 60;
+            }
+        }
+        if(s >= 10) {
+            return "" + m + ":" + s;
+        } else {
+            return "" + m + ":0" + s;
+        }
+        
+    }
+
+    public void removeUnliked() {
+        for(int i = 0; i < songs.size(); i++) {
+            if((songs.get(i)).getLiked() == false) {
+                songs.remove(i);
+                i--;
+            }
+        }
+    }
 }

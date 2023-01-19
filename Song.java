@@ -25,6 +25,14 @@ public class Song {
         liked = myLiked;
     }
 
+    public Song (String myTitle, String myArtist, int myMinutes, int mySeconds){
+        title = myTitle;
+        artist = myArtist;
+        minutes = myMinutes;
+        seconds = mySeconds;
+        liked = false;
+    }
+
 
 
 
