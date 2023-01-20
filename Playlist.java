@@ -37,7 +37,10 @@ public class Playlist {
 
     public void addSong(Song newSong) {
         songs.add(newSong);
+        System.out.println("Added " + songs.get(songs.size()-1));
     }
+
+    
 
     public void likeUnlike(int position) {
         (songs.get(position)).changeLike();
