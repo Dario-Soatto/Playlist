@@ -1,7 +1,7 @@
 /**
  * File for a Song class to be used in the Playlist Project
  * @author Steven Li and Dario Soatto
- * @version 01/12/2023
+ * @version 01/19/2023
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
@@ -69,7 +69,22 @@ public class Song {
     }
 
     public String toString() {
-        return "\"" + title + "\" by " + artist + " (" + minutes + ":" + seconds + ")";
+        if(seconds < 10) {
+            if(liked == false) {
+                return "\"" + title + "\" by " + artist + " (" + minutes + ":0" + seconds + ")";
+            } else {
+                return "\"" + title + "\" by " + artist + " (" + minutes + ":0" + seconds + ")" + " - liked";
+
+            }
+        } else {
+            if(liked == false) {
+                return "\"" + title + "\" by " + artist + " (" + minutes + ":" + seconds + ")";
+            } else {
+                return "\"" + title + "\" by " + artist + " (" + minutes + ":" + seconds + ")" + " - liked";
+    
+            }
+        }
+        
     }
 
     

@@ -1,9 +1,10 @@
-import java.util.ArrayList;
-
     /**
      * The Playlist class, which will keep track of a playlist of Song objects
      * Refer to the project description to make sure you have access to all available methods
+     * @author Steven Li and Dario Soatto
+     * @version 01/19/2023
      */
+    import java.util.ArrayList;
 public class Playlist {
     /**
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
